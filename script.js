@@ -1,5 +1,3 @@
-
-const btn = document.getElementById("btn");
 const handOfSecond = document.getElementById("handOfSecond");
 const handOfMinute = document.getElementById("handOfMinute");
 const handOfHour = document.getElementById("handOfHour")
@@ -16,8 +14,13 @@ const currentDate = new Date();
 const hours = currentDate.getHours();
 const minutes = currentDate.getMinutes();
 const seconds = currentDate.getSeconds();
-// console.log(`${hours}: ${minutes}: ${seconds}`);
-handSecond.style.transform = `translate(-50%, -100%) rotate(${seconds*rotateSecond}deg)`;
+ console.log(`${hours}: ${minutes}: ${seconds}`);
+handOfSecond.style.transform = `translate(-50%, -100%) rotate(${seconds*rotateSecond}deg)`;
+  handOfHour.style.transform = `translate(-50%, -100%) rotate(${hours*rotateHours}deg)`;
+ handOfMinute.style.transform = `translate(-50%, -100%) rotate(${minutes*rotateMin}deg)`;
+console.log(minutes*rotateMin);
+
+
 
 
 }
